@@ -15,18 +15,18 @@ export default {
       data: {}
     };
   },
-  async created({ $config: { apiBaseUrl, xApiKey }}) {
-    const query = this.$route.query;
-    if (query.id === undefined || query.draftKey === undefined) {
-      return;
-    }
-    const { data } = await axios.get(
-      `${apiBaseUrl}/blog/${query.id}?draftKey=${query.draftKey}`,
-      {
-        headers: { 'X-API-KEY': xApiKey }
-      }
-    )
-    this.data = data;
-  },
+  // async created({ $config: { apiBaseUrl, xApiKey }}) {
+  //   const query = this.$route.query;
+  //   if (query.id === undefined || query.draftKey === undefined) {
+  //     return;
+  //   }
+  //   const { data } = await axios.get(
+  //     `${apiBaseUrl}/blog/${query.id}?draftKey=${query.draftKey}`,
+  //     {
+  //       headers: { 'X-API-KEY': xApiKey }
+  //     }
+  //   )
+  //   this.data = data;
+  // },
 }
 </script>
