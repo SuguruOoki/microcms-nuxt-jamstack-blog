@@ -1,7 +1,6 @@
 const axios = require('axios');
 
 exports.handler = async (event) => {
-  console.log($config)
   const { id, draftKey } = event.queryStringParameters;
   if (!id) {
     return {
@@ -13,7 +12,7 @@ exports.handler = async (event) => {
   }
   return axios
     .get(
-      `${apiBaseUrl}/blog/${id}?draftKey=${draftKey}`,
+      `https://suguruohki.microcms.io/api/v1/blog/${id}?draftKey=${draftKey}`,
       {
         headers: { 'X-API-KEY': xApiKey },
       }
