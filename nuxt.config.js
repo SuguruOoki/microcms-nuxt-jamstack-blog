@@ -53,8 +53,9 @@ export default {
 
   generate: {
     async routes() {
+      console.log(process.env.X_API_KEY)
       const pages = await axios
-        .get(`${process.env.X_API_KEY}/blog?limit=100`, {
+        .get(`${process.env.API_BASE_URL}/blog?limit=100`, {
           headers: { 'X-API-KEY': process.env.X_API_KEY, }
         })
         .then((res) =>
