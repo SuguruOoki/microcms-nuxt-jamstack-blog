@@ -14,7 +14,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.9.1",
-    "netlify-lambda": "^2.0.3",
+    "netlify-lambda": "^2.0.5",
     "node-sass": "^5.0.0",
     "nuxt": "^2.15.3",
     "sass-loader": "^11.0.1"
