@@ -16,7 +16,7 @@ export default {
   head: {
     title: 'microcms-nuxt-jamstack-blog',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
